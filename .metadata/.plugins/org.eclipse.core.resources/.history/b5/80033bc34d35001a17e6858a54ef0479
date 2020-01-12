@@ -1,0 +1,36 @@
+#include <iostream>
+#include <memory>
+#include <vector>
+
+using namespace std;
+
+class Test{
+	int data;
+	public:
+	Test():data(0){cout<<"Test Constructor called for data = " << data <<  endl;};
+	Test(int d):data(d){cout<<"Test Constructor called for data = " << data << endl;};
+	~Test(){cout<<"Test Destructor called  for data = " << data << endl;}
+	int getData() const {return data;}
+};
+
+//prototypes
+unique_ptr<vector<shared_ptr<Test>>> make(void);
+void fill(vector<shared_ptr<Test>> &, int num);
+void display(const vector<shared_ptr<Test>> &);
+
+int main(){
+	int num;
+	unique_ptr<vector<shared_ptr<Test>>> vec_ptr;
+	vec_ptr = make();
+	cout << "How many data points do you want to enter: ";
+	std::cin >> num;
+	fill(*vec_ptr, num);
+	display(*vec_ptr);
+
+	return 0;
+}
+
+unique_ptr<vector<shared_ptr<Test>>> make(void){
+	unique_ptr<vector<shared_ptr<Test>>> vec = make_unique<vector<shared_ptr<Test>>>(1000);
+	return vec;
+}

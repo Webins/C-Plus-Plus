@@ -1,0 +1,15 @@
+14:59:41 **** Incremental Build of configuration Debug for project MPGmultiples ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: MPGmultiples
+Invoking: GCC C++ Linker
+g++  -o "MPGmultiples"  ./main.o   
+Finished building target: MPGmultiples
+ 
+
+14:59:42 Build Finished. 0 errors, 0 warnings. (took 992ms)
+

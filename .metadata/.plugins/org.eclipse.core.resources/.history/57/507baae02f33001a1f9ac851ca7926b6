@@ -1,0 +1,25 @@
+#include "SavingAccount.hpp"
+int SavingAccount::SavingIdentifier = 0;
+
+
+SavingAccount::SavingAccount(std::string nameVal, double balanceVal, double interestVal)
+	:name(nameVal), balance(balanceVal), interestRate(defInterestRate), id(++SavingIdentifier){};
+
+SavingAccount::SavingAccount(std::string nameVal, double balanceVal)
+	:SavingAccount(nameVal, balanceVal){};
+
+SavingAccount::SavingAccount(std::string nameVal)
+	:SavingAccount(nameVal){};
+
+SavingAccount::SavingAccount()
+	:SavingAccount(){};
+
+
+bool SavingAccount::deposit(double amount){
+	amount = amount + ((amount * interestRate)/100);
+	return Account::deposit(amount);
+}
+
+double SavingAccount::getInterestRate(void) const{
+	return interestRate;
+}

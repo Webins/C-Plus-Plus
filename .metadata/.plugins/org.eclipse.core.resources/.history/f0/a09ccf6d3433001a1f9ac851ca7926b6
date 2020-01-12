@@ -1,0 +1,13 @@
+#include "Account.hpp"
+
+int Account::createdAccounts = 0;
+
+
+Account::Account(){
+	createdAccounts++;
+}
+
+
+int Account::createdAccounts(void){
+	return createdAccounts;
+}

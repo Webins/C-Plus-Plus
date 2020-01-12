@@ -1,0 +1,53 @@
+22:32:38 **** Build of configuration Debug for project ConstructorInitializationLists ****
+make all 
+Building file: ../Player.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Player.d" -MT"Player.o" -o "Player.o" "../Player.cpp"
+../Player.cpp:22:6: error: prototype for ‘void Player::talk(std::__cxx11::string)’ does not match any in class ‘Player’
+ void Player::talk(std::string s){
+      ^~~~~~
+In file included from ../Player.cpp:1:0:
+../Player.hpp:35:7: error: candidate is: void Player::talk(std::__cxx11::string) const
+  void talk(std::string s) const;
+       ^~~~
+../Player.cpp:25:13: error: prototype for ‘std::__cxx11::string Player::getVoc()’ does not match any in class ‘Player’
+ std::string Player::getVoc(void){
+             ^~~~~~
+In file included from ../Player.cpp:1:0:
+../Player.hpp:36:14: error: candidate is: std::__cxx11::string Player::getVoc() const
+  std::string getVoc(void) const;
+              ^~~~~~
+../Player.cpp:28:13: error: prototype for ‘std::__cxx11::string Player::getName()’ does not match any in class ‘Player’
+ std::string Player::getName(void){
+             ^~~~~~
+In file included from ../Player.cpp:1:0:
+../Player.hpp:37:14: error: candidate is: std::__cxx11::string Player::getName() const
+  std::string getName(void) const;
+              ^~~~~~~
+../Player.cpp:31:14: error: prototype for ‘long double Player::getExp()’ does not match any in class ‘Player’
+  long double Player::getExp(void){
+              ^~~~~~
+In file included from ../Player.cpp:1:0:
+../Player.hpp:38:14: error: candidate is: long double Player::getExp() const
+  long double getExp(void) const;
+              ^~~~~~
+../Player.cpp:34:5: error: prototype for ‘int Player::getLevel()’ does not match any in class ‘Player’
+ int Player::getLevel(void){
+     ^~~~~~
+In file included from ../Player.cpp:1:0:
+../Player.hpp:39:6: error: candidate is: int Player::getLevel() const
+  int getLevel(void) const;
+      ^~~~~~~~
+../Player.cpp:37:5: error: prototype for ‘int Player::getHealth()’ does not match any in class ‘Player’
+ int Player::getHealth(void){
+     ^~~~~~
+In file included from ../Player.cpp:1:0:
+../Player.hpp:40:6: error: candidate is: int Player::getHealth() const
+  int getHealth(void) const;
+      ^~~~~~~~~
+subdir.mk:21: fallo en las instrucciones para el objetivo 'Player.o'
+make: *** [Player.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:32:39 Build Failed. 14 errors, 0 warnings. (took 864ms)
+

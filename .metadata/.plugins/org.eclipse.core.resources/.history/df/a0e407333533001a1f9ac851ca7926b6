@@ -1,0 +1,76 @@
+#include <iostream>
+#include "SavingAccount.hpp"
+#include "Account.hpp"
+#include "Accounts_Util.hpp"
+#include <vector>
+using namespace std;
+
+
+int main(){
+	vector<Account> Accounts;
+	vector<SavingAccount> SavingAccounts;
+	vector<TrustAccount> TrustAccounts;
+	vector<CheckingAccount> CheckingAccounts;
+
+	CheckingAccount ca("CheckingAccount", 1000);
+	ca.deposit(1000);
+	ca.withdraw(1000);
+
+	SavingAccount sa("SavingAccount", 1000, 3);
+	sa.deposit(1000);
+	sa.withdraw(1000);
+
+
+	TrustAccount ta("TrustAccount", 1000, 3);
+	ta.deposit(1000);
+	ta.withdraw(1000);
+
+
+//	//SavingAccounts
+//	cout << "=========================================Savings=========================================" << endl;
+//	SavingAccounts.push_back(SavingAccount("Tyrell Wellick", 100000, 10));
+//	SavingAccounts.push_back(SavingAccount("Philip", 1500));
+//	SavingAccounts.push_back(SavingAccount("Elliot"));
+//	SavingAccounts.push_back(SavingAccount());
+//
+//	display(SavingAccounts);
+//	depositAll(SavingAccounts, 1500);
+//	withdrawAll(SavingAccounts, 2500);
+//	display(SavingAccounts);
+//
+//
+//	//CheckingAccounts
+//	cout << "=========================================Checking=========================================" << endl;
+//	CheckingAccounts.push_back(CheckingAccount("Ronaldo", 133250));
+//	CheckingAccounts.push_back(CheckingAccount("Jose"));
+//	CheckingAccounts.push_back(CheckingAccount());
+//
+//	display(CheckingAccounts);
+//	depositAll(CheckingAccounts, 100000);
+//	withdrawAll(CheckingAccounts, 20666);
+//	display(CheckingAccounts);
+//
+//	//TrustAccounts
+//
+//	cout << "=========================================Trust=========================================" << endl;
+//	TrustAccounts.push_back(TrustAccount("Cristiano Ronaldo", 7000000000, 12));
+//	TrustAccounts.push_back(TrustAccount("Arda", 157700));
+//	TrustAccounts.push_back(TrustAccount("James"));
+//	TrustAccounts.push_back(TrustAccount());
+//
+//
+//	display(TrustAccounts);
+//	depositAll(TrustAccounts, 150000);
+//	withdrawAll(TrustAccounts, 2500000);
+//	withdrawAll(TrustAccounts, 250);
+//	withdrawAll(TrustAccounts, 20);
+//	withdrawAll(TrustAccounts, 222);
+//	display(TrustAccounts);
+
+
+	return 0;
+}
+
+
+
+

@@ -1,0 +1,41 @@
+#include <iostream>
+#include "SavingAccount.hpp"
+#include "TrustAccount.hpp"
+#include "CheckingAccount.hpp"
+#include "Account.hpp"
+#include "Accounts_Util.hpp"
+#include <vector>
+using namespace std;
+
+
+int main(){
+	CheckingAccount c;
+	SavingAccount s;
+	TrustAccount t;
+
+	Account &ca = c;
+	Account &sa = s;
+	Account &ta = t;
+	vector<Account > Accounts;
+	Accounts.push_back(ca);
+	Accounts.push_back(sa);
+	Accounts.push_back(ta);
+
+	depositAll(&Accounts, 15000);
+	withdrawAll(&Accounts, 5000);
+	display(&Accounts);
+
+	cout << "Total Accounts created: " << ca.getTotalAccounts() << endl;
+
+	delete ca;
+	delete sa;
+	delete ta;
+
+
+	return 0;
+
+}
+
+
+
+

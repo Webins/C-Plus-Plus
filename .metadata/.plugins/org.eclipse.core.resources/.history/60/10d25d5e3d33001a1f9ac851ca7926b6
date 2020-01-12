@@ -1,0 +1,19 @@
+#include "Accounts_Util.hpp"
+
+void display(std::vector<Account*> &va){
+	for(auto &accounts: va)
+		std::cout << *accounts;
+}
+
+
+void depositAll(std::vector<Account*> &va, double amount){
+	for(auto &accounts: va)
+		accounts->deposit(amount);
+}
+
+
+void withdrawAll(std::vector<Account*> &va, double amount){
+	for(auto &accounts: va)
+		accounts->withdraw(amount);
+}
+

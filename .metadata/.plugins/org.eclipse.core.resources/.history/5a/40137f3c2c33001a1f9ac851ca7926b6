@@ -1,0 +1,20 @@
+#include "CheckingAccount.hpp"
+
+int CheckingAccount::identifier = 0;
+
+CheckingAccount::CheckingAccount(std::string nameVal, double balanceVal)
+	:CheckingAccount(nameVal, balanceVal)){
+	}
+
+
+CheckingAccount::CheckingAccount()
+	:Account() {};
+CheckingAccount::CheckingAccount(std::string nameVal)
+	:Account(nameVal) {};
+
+
+bool CheckingAccount::withdraw(double amount){
+		amount += fee;
+		return Account::withdraw(amount);
+
+}

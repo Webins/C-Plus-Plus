@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;OOPc++/account.h&apos; to &apos;Account.h&apos;" description="Rename resource &apos;account.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="account.h" name="Account.h" stamp="1576807066841" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;OOPc++/Account.h&apos; to &apos;Account.hpp&apos;" description="Rename resource &apos;Account.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Account.h" name="Account.hpp" stamp="1576808829058" updateReferences="true"/>
+</session>

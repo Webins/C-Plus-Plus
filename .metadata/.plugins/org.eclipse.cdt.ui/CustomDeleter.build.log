@@ -1,0 +1,15 @@
+01:46:44 **** Incremental Build of configuration Debug for project CustomDeleter ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: CustomDeleter
+Invoking: GCC C++ Linker
+g++  -o "CustomDeleter"  ./main.o   
+Finished building target: CustomDeleter
+ 
+
+01:46:45 Build Finished. 0 errors, 0 warnings. (took 1s.39ms)
+

@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+double calculateAvg(int, int);
+int main(){
+	int milles =0, gallons =0;
+	double millesPerGallons=0;
+	cout << "Enter the milles: ";
+	cin >> milles;
+	cout >> "Enter the gallons: ";
+	cin >> gallons;
+
+	millesPerGallons = calculateAvg(milles, gallons);
+	cout << "The milles per gallons is: " << millesPerGallons << endl;
+
+}
+
+double calculateAvg(int milles, int gallons){
+	double result;
+	try{
+			if(gallons == 0)
+				throw -1;
+			result = static_cast<double>(milles)/ gallons;
+		}catch (int &exc) {
+			cerr << "Cannot divide by zero" << endl;
+		}
+	return double;
+}

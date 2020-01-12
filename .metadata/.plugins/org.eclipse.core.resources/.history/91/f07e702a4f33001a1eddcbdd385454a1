@@ -1,0 +1,21 @@
+#include "Account.hpp"
+
+int Account::createdAccounts = 0;
+
+Account::Account(std::string nameVal, double balanceVal)
+	:name(nameVal), balance(balanceVal){
+	createdAccounts++;
+}
+
+Account::Account(std::string nameVal)
+	:Account(nameVal, 0.0){};
+
+Account::Account()
+	:Account("Unnamed Account", 0.0){};
+
+
+
+
+int Account::getTotalAccounts(void){
+	return createdAccounts;
+}

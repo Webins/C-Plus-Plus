@@ -1,0 +1,44 @@
+/*
+ * SavingAccount.hpp
+ *
+ *  Created on: Jan 6, 2020
+ *      Author: webins
+ */
+
+#ifndef SAVINGACCOUNT_HPP_
+#define SAVINGACCOUNT_HPP_
+
+#include <string>
+#include <iostream>
+#include "Account.hpp"
+
+class SavingAccount:public Account{
+private:
+	static int SavingIdentifier;
+	std::string name;
+	double balance;
+	double interestRate;
+	int id;
+public:
+	static constexpr double defInterestRate = 3.0;
+	SavingAccount(std::string, double, double);
+	SavingAccount(std::string, double);
+	SavingAccount(std::string);
+	SavingAccount();
+
+	virtual bool deposit(double) override;
+	virtual bool withdraw(double) override;
+	virtual ~SavingAccount(){};
+
+
+
+};
+
+
+
+
+
+
+
+
+#endif /* SAVINGACCOUNT_HPP_ */

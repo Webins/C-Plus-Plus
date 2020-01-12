@@ -1,0 +1,6 @@
+13:54:42 **** Incremental Build of configuration Debug for project overloadingWithGlobalFunc ****
+make all 
+make: No se hace nada para 'all'.
+
+13:54:42 Build Finished. 0 errors, 0 warnings. (took 80ms)
+

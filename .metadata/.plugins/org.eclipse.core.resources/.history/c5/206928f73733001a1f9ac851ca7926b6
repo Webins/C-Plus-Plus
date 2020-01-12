@@ -1,0 +1,32 @@
+#include "CheckingAccount.hpp"
+
+int CheckingAccount::checkingIdentifier = 0;
+
+CheckingAccount::CheckingAccount(std::string nameVal, double balanceVal)
+	:name(nameVal), balance(balanceVal), id(++checkingIdentifier){}
+
+
+CheckingAccount::CheckingAccount()
+	:CheckingAccount("Unnamed checking account", 0.0){};
+CheckingAccount::CheckingAccount(std::string nameVal)
+	:CheckingAccount(nameVal, 0.0) {};
+
+
+bool CheckingAccount::withdraw(double amount){
+		amount += fee;
+		if(amount > balance) {
+			std::cout << "Cant withdraw the amount of " << amount << "\nNot enough funds" << std::endl;
+			return false;
+		}
+		balance -=amount;
+		return true;
+}
+
+bool CheckingAccount::deposit(double amount){
+	if(amount <=0) {
+		std::cout << "Can deposit an amount lesser or equal than zero" << std::endl;
+		return false;
+	}
+	balance+=amount;
+	return true;
+}

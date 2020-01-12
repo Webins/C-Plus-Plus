@@ -1,0 +1,28 @@
+#include "Accounts_Util.hpp"
+
+void display(std::vector<Account> &va){
+	for(auto &accounts: va)
+		std::cout << accounts;
+}
+
+
+void depositAll(std::vector<Account> &va, double amount){
+	for(auto &accounts: va){
+		if(accounts.deposit(amount))
+			std::cout <<"Deposit completed to " << accounts.getName() << " for an amount of " << amount << "$" <<std::endl;
+		else std::cout <<"Deposit failed by " << accounts.getName() << " for an amount of " << amount << "$" << std::endl;
+	}
+}
+
+
+
+
+
+void withdrawAll(std::vector<Account> &va, double amount){
+	for(auto &accounts: va){
+		if(accounts.getBalance() < amount) std::cout << "The account of " << accounts.getName() << " has ";
+		else std::cout <<"Withdraw completed by " << accounts.getName() << " for an amount of " << amount << "$" <<std::endl;
+		accounts.withdraw(amount);
+	}
+}
+

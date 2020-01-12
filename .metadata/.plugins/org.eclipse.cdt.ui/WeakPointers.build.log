@@ -1,0 +1,6 @@
+00:49:55 **** Incremental Build of configuration Debug for project WeakPointers ****
+make all 
+make: No se hace nada para 'all'.
+
+00:49:55 Build Finished. 0 errors, 0 warnings. (took 116ms)
+

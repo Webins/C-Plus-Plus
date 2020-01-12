@@ -1,0 +1,6 @@
+22:32:38 **** Incremental Build of configuration Debug for project Challengue ****
+make all 
+make: No se hace nada para 'all'.
+
+22:32:38 Build Finished. 0 errors, 0 warnings. (took 140ms)
+

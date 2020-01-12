@@ -1,0 +1,73 @@
+#include <iostream>
+#include <string>
+#include <memory>
+using namespace std;
+
+class IPrintable{
+	friend ostream &operator<<(ostream &, const IPrintable &);
+public:
+	virtual void printable(IPrintable &) const =0;
+	virtual ~IPrintable();
+};
+
+class Account: public IPrintable{
+
+public:
+	virtual void withdraw(double amount) const{
+		cout << "Account::Withdraw"  << endl;
+	}
+	virtual void printable(Account &a) override {
+		cout << a ;
+	}
+	virtual ~Account(){}
+};
+
+ostream &operator<<(ostream &os, const Account &acc){
+	os << "Account display";
+	return os;
+}
+
+class Checking : public Account{
+public:
+	virtual void withdraw(double amount)const override{
+		cout << "Checking::Withdraw"  << endl;
+	}
+	virtual ~Checking(){}
+};
+
+class Saving : public Account{
+public:
+	virtual void withdraw(double amount)const override{
+		cout << "Saving::Withdraw"  << endl;
+	}
+	virtual ~Saving(){}
+};
+
+class Trust : public Saving{
+public:
+	virtual void withdraw(double amount)const override{
+		cout << "Trust::Withdraw"  << endl;
+	}
+	virtual ~Trust(){}
+};
+
+
+
+int main(){
+	Account * p1 = new Account();
+	Account * p2 = new Saving();
+	Account * p3 = new Checking();
+	Account * p4 = new Trust();
+
+	Account *arr [] = {p1, p2, p3, p4};
+	for(int i=0; i <4; i++){
+		arr[i] -> withdraw(2000);
+		cout << arr[i] << endl;
+	}
+
+	delete p1;
+	delete p2;
+	delete p3;
+	delete p4;
+	return 0;
+}

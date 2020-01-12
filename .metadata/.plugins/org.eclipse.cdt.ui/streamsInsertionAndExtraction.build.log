@@ -1,0 +1,6 @@
+16:01:36 **** Incremental Build of configuration Debug for project streamsInsertionAndExtraction ****
+make all 
+make: No se hace nada para 'all'.
+
+16:01:36 Build Finished. 0 errors, 0 warnings. (took 84ms)
+

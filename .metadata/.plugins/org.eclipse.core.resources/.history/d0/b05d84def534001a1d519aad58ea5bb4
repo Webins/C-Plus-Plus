@@ -1,0 +1,29 @@
+#include <iostream>
+#include <memory>
+
+using namespace std;
+
+class B;
+
+class A{
+	shared_ptr<B> b_ptr;
+public:
+	void set_B(shared_ptr<B> &b){b_ptr = b;};
+	A(){"Constructor called";}
+	~A(){"Destructor called";}
+
+};
+
+class B{
+	shared_ptr<A> a_ptr; //strong circular reference
+public:
+	void set_A(shared_ptr<A> &a){a_ptr = a;};
+	B(){"Constructor called";}
+	~B(){"Destructor called";}
+};
+
+int main(){
+
+
+	return 0;
+}

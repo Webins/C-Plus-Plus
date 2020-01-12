@@ -1,0 +1,24 @@
+#include "Account.hpp"
+
+int Account::createdAccounts = 0;
+
+std::ostream &operator<<(std::ostream &os, const Account&a){
+	os << "[" <<"Account name: "<< a.name << ", Balance: " << a.balance << ", Id: " <<  a.getId() << "]\n";
+	return os;
+}
+
+Account::Account(std::string nameVal, double balanceVal)
+	:name(nameVal), balance(balanceVal){
+	identifier++;
+}
+
+Account::Account(std::string nameVal)
+	:Account(nameVal, 0.0){}
+
+Account::Account()
+	:Account("Unnamed Account", 0.0){}
+
+
+int Account::getId(void) const{
+	return identifier;
+}

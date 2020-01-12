@@ -1,0 +1,17 @@
+#include "Account.hpp"
+
+int Account::createdAccounts = 0;
+
+//std::ostream &operator<<(std::ostream &os, const Account&a){
+//	os << "[" <<"Account name: "<< a.name << ", Balance: " << a.balance << ", Id: " <<  a.getId() << "]\n";
+//	return os;
+//}
+
+Account::Account(){
+	createdAccounts++;
+}
+
+
+int Account::createdAccounts(void) const{
+	return createdAccounts;
+}

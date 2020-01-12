@@ -1,0 +1,35 @@
+#include <iostream>
+#include "SavingAccount.hpp"
+#include "Account.hpp"
+#include "Accounts_Util.hpp"
+#include <vector>
+using namespace std;
+
+
+int main(){
+	vector<Account> Accounts;
+	vector<SavingAccount> SavingAccounts;
+	vector<TrustAccount> TrustAccounts;
+	vector<CheckingAccount> CheckingAccounts;
+
+	CheckingAccount ca("CheckingAccount", 1000);
+	ca.deposit(1000);
+	ca.withdraw(1000);
+
+	SavingAccount sa("SavingAccount", 1000, 3);
+	sa.deposit(1000);
+	sa.withdraw(1000);
+
+
+	TrustAccount ta("TrustAccount", 1000, 3);
+	ta.deposit(1000);
+	ta.withdraw(1000);
+
+
+
+	return 0;
+}
+
+
+
+

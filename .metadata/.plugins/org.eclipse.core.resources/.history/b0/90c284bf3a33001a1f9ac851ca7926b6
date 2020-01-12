@@ -1,0 +1,35 @@
+/*
+ * Account.hpp
+ *
+ *  Created on: Jan 6, 2020
+ *      Author: webins
+ */
+
+#ifndef ACCOUNT_HPP_
+#define ACCOUNT_HPP_
+#include <string>
+#include <iostream>
+
+#include "I_Printable.hpp"
+
+class Account : public I_Printable{
+	friend std::ostream &operator<<(std::ostream &, const Account &);
+private:
+	static int createdAccounts;
+public:
+	Account();
+	virtual bool deposit(double) =0;
+	virtual bool withdraw(double) =0;
+	virtual void print(std::ostream &) const =0;
+	virtual ~Account(){};
+	static int getTotalAccounts(void) ;
+};
+
+
+
+
+
+
+
+
+#endif /* ACCOUNT_HPP_ */

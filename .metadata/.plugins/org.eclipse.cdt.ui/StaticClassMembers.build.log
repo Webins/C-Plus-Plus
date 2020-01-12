@@ -1,0 +1,17 @@
+22:32:46 **** Incremental Build of configuration Debug for project StaticClassMembers ****
+make all 
+Building file: ../Player.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Player.d" -MT"Player.o" -o "Player.o" "../Player.cpp"
+Finished building: ../Player.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+make: *** wait: No hay ningún proceso hijo.  Alto.
+make: *** Se espera a que terminen otras tareas....
+make: *** wait: No hay ningún proceso hijo.  Alto.
+Command canceled
+
+22:32:48 Build Cancelled. (took 1s.783ms)
+
