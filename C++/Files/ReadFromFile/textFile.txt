@@ -1,0 +1,3 @@
+Este es un archivo de texto
+Usado para probar como leer archivos en c++
+Good luck!
