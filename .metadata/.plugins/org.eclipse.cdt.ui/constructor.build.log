@@ -1,7 +1,0 @@
-12:24:27 **** Clean-only build of configuration Debug for project constructor ****
-make clean 
-rm -rf  ./Player.o ./main.o  ./Player.d ./main.d  constructor
- 
-
-12:24:27 Build Finished. 0 errors, 0 warnings. (took 231ms)
-

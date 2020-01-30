@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;moveConstructors/Deep.cpp&apos; to &apos;Move.cpp&apos;" description="Rename resource &apos;Deep.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Deep.cpp" name="Move.cpp" stamp="1577126871308" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;moveConstructors/Deep.hpp&apos; to &apos;Move.hpp&apos;" description="Rename resource &apos;Deep.hpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Deep.hpp" name="Move.hpp" stamp="1577126878404" updateReferences="true"/>
-</session>

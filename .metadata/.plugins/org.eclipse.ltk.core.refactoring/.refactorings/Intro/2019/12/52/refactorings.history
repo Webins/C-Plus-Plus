@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Intro/Deep.cpp&apos; to &apos;myString.cpp&apos;" description="Rename resource &apos;Deep.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Deep.cpp" name="myString.cpp" stamp="1577402132876" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Intro/Deep.hpp&apos; to &apos;myString.hpp&apos;" description="Rename resource &apos;Deep.hpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Deep.hpp" name="myString.hpp" stamp="1577402142065" updateReferences="true"/>
-</session>
