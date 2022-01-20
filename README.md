@@ -1,2 +1,5 @@
 # C++
-Practices and exercises for the c++ language
+
+Ejercicios y practicas del lenguaje C++
+
+Practices and exercises from the C++ language
